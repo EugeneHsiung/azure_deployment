@@ -1,3 +1,13 @@
+# Azure Deployment:
+1. In the Google Shell terminal, you will need to install AZURE CLI. Type in `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
+2. Type in `az login --use-device-code`, click on the link and paste the code shown in the terminal to connect Google Shell with Azure
+3. Type in `az account list --output table`, and make sure the correct subscription is selected. If not type in `az account set --subscription <paste the desired SubscriptionId here>`
+4. Type in az `webapp up --name <replace with what you would like to name the webapp> --runtime PYTHON:3.9 --sku B1` and wait for deployment to finish
+5. Go to `App Service` in Azure and click on the link in `Default domain`
+
+
+
+
 # azure_deployment
 
 Deploy Application via Azure:
